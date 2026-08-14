@@ -46,7 +46,7 @@
         body {
             font-family: var(--font-sans);
             background: var(--bg-primary);
-            color: var(--text-primary);
+            color: var(--text-secondary);
             line-height: 1.6;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
@@ -665,6 +665,19 @@
             letter-spacing: 0.04em;
         }
 
+        .project-card .badge-production {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 100px;
+            background: rgba(16, 185, 129, 0.12);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.15);
+            letter-spacing: 0.04em;
+        }
+
         /* ─── Skills ─── */
         .skills-grid {
             display: grid;
@@ -697,11 +710,6 @@
         .skill-card .skill-name {
             font-weight: 600;
             font-size: 0.95rem;
-        }
-
-        .skill-card .skill-years {
-            font-size: 0.8rem;
-            color: var(--text-muted);
         }
 
         /* ─── Logros ─── */
@@ -745,6 +753,17 @@
         .achievement-item .ach-content p {
             font-size: 0.88rem;
             color: var(--text-secondary);
+        }
+
+        .achievement-item .ach-content a {
+            color: var(--accent-1);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: var(--transition);
+        }
+
+        .achievement-item .ach-content a:hover {
+            color: var(--accent-2);
         }
 
         /* ─── Footer ─── */
@@ -981,9 +1000,9 @@
                     <span class="alias">@leifdev</span>
                 </h1>
                 <p>
-                    Ingeniero en Ciencias Informáticas (2025–2026) · 23 años ·
-                    5 años con Unreal Engine · 3 en fullstack · 2 en Flutter.
-                    Creo soluciones digitales con impacto real.
+                    Ingeniero en Ciencias Informáticas (2025–2026) · 23 años.
+                    Desarrollo soluciones tecnológicas con impacto real: desde plataformas
+                    empresariales en producción hasta videojuegos médicos con IA.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">
@@ -1003,7 +1022,7 @@
                     <a href="https://apklis.cu/u/leifdev" target="_blank" aria-label="Apklis">
                         <i class="fas fa-store"></i>
                     </a>
-                    <a href="mailto:leifdev@proton.me" aria-label="Correo">
+                    <a href="mailto:leifdev0306@gmail.com" aria-label="Correo">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -1024,8 +1043,8 @@
             <div class="stats-row fade-up visible delay-3">
                 <div class="stat-item"><div class="stat-number">17+</div><div class="stat-label">Repositorios</div></div>
                 <div class="stat-item"><div class="stat-number">6</div><div class="stat-label">Proyectos destacados</div></div>
-                <div class="stat-item"><div class="stat-number">5</div><div class="stat-label">Años Unreal</div></div>
-                <div class="stat-item"><div class="stat-number">3</div><div class="stat-label">Años Web</div></div>
+                <div class="stat-item"><div class="stat-number">100+</div><div class="stat-label">Usuarios en Tu MiPyme</div></div>
+                <div class="stat-item"><div class="stat-number">B1</div><div class="stat-label">Certificación Inglés</div></div>
             </div>
         </div>
     </section>
@@ -1049,7 +1068,7 @@
                     </p>
                     <p>
                         <strong>Alias:</strong> Leifdev · <strong>Ubicación:</strong> Cuba ·
-                        <strong>Idiomas:</strong> Español nativo, Inglés técnico.
+                        <strong>Idiomas:</strong> Español nativo, Inglés (B1 certificado · en mejora continua).
                     </p>
                     <div class="about-tags">
                         <span class="tag accent">#UnrealEngine5</span>
@@ -1062,24 +1081,24 @@
                     </div>
                 </div>
                 <div class="about-text fade-up delay-1">
-                    <span class="section-label">Experiencia</span>
-                    <h2 class="section-title" style="font-size:1.8rem;">Trayectoria <span>en números</span></h2>
+                    <span class="section-label">Trayectoria</span>
+                    <h2 class="section-title" style="font-size:1.8rem;">Experiencia <span>clave</span></h2>
                     <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:16px;">
                         <div style="background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-sm); padding:20px;">
-                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">5</div>
-                            <div style="color:var(--text-secondary); font-size:0.9rem;">años con Unreal Engine</div>
+                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">Unreal</div>
+                            <div style="color:var(--text-secondary); font-size:0.9rem;">Videojuegos y simuladores</div>
                         </div>
                         <div style="background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-sm); padding:20px;">
-                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">3</div>
-                            <div style="color:var(--text-secondary); font-size:0.9rem;">años desarrollo web fullstack</div>
+                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">FullStack</div>
+                            <div style="color:var(--text-secondary); font-size:0.9rem;">Django · Flutter · Supabase</div>
                         </div>
                         <div style="background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-sm); padding:20px;">
-                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">2</div>
-                            <div style="color:var(--text-secondary); font-size:0.9rem;">años con Flutter</div>
+                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">3D</div>
+                            <div style="color:var(--text-secondary); font-size:0.9rem;">Blender · Modelado · Animación</div>
                         </div>
                         <div style="background:var(--bg-card); border:1px solid var(--border-glass); border-radius:var(--radius-sm); padding:20px;">
-                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">17</div>
-                            <div style="color:var(--text-secondary); font-size:0.9rem;">repositorios + prototipos</div>
+                            <div style="font-family:var(--font-mono); font-size:2rem; font-weight:700; color:var(--accent-1);">17+</div>
+                            <div style="color:var(--text-secondary); font-size:0.9rem;">Repositorios y prototipos</div>
                         </div>
                     </div>
                 </div>
@@ -1109,18 +1128,16 @@
                         Plataforma de gestión empresarial completa para MiPymes y TCP en Cuba.
                         Android + Windows app responsiva con inventarios, KPI gráficos, nóminas,
                         ventas, reportes PDF/Excel, módulo fiscal, múltiples sucursales,
-                        estadísticas de vendedores y más.
+                        estadísticas de vendedores y más. <strong>Más de 100 usuarios activos</strong>.
                     </p>
                     <div class="project-tech">
                         <span>Flutter</span><span>Supabase</span><span>Dart</span><span>Windows</span><span>Android</span>
                     </div>
                     <div class="project-links">
                         <a href="https://leifdev0306.github.io/Tu-MiPyme/" target="_blank">
-                            <i class="fas fa-globe"></i> Ver demo
+                            <i class="fas fa-globe"></i> Ver producto
                         </a>
-                        <a href="https://github.com/leifdev0306/Tu-MiPyme" target="_blank">
-                            <i class="fab fa-github"></i> Repositorio
-                        </a>
+                        <span class="badge-production"><i class="fas fa-check-circle"></i> En producción</span>
                     </div>
                 </div>
 
@@ -1154,9 +1171,9 @@
                     <span class="project-tag">Django · Python</span>
                     <h3>JobFinder</h3>
                     <p class="project-desc">
-                        Sistema completo de búsqueda de empleo donde empresas publican ofertas
-                        y candidatos se postulan. Incluye autenticación, filtros, perfiles,
-                        panel de administración y seguimiento de aplicaciones.
+                        Plataforma web completa en Django que conecta empresas con talento profesional.
+                        Facilita la publicación de ofertas laborales, gestión de postulaciones y
+                        búsqueda de oportunidades en un entorno intuitivo y eficiente.
                     </p>
                     <div class="project-tech">
                         <span>Django</span><span>Python</span><span>PostgreSQL</span><span>Bootstrap</span>
@@ -1256,22 +1273,22 @@
                 <div class="skill-card fade-up delay-1">
                     <div class="skill-icon"><i class="fas fa-cube"></i></div>
                     <div class="skill-name">Unreal Engine 5</div>
-                    <div class="skill-years">5 años · Blueprints · C++</div>
+                    <div class="skill-years">Blueprints · C++</div>
                 </div>
                 <div class="skill-card fade-up delay-2">
                     <div class="skill-icon"><i class="fab fa-flutter"></i></div>
                     <div class="skill-name">Flutter</div>
-                    <div class="skill-years">2 años · Dart · Android · Windows</div>
+                    <div class="skill-years">Dart · Android · Windows</div>
                 </div>
                 <div class="skill-card fade-up delay-3">
                     <div class="skill-icon"><i class="fab fa-python"></i></div>
                     <div class="skill-name">Django / Python</div>
-                    <div class="skill-years">3 años · APIs · Backend · ORM</div>
+                    <div class="skill-years">APIs · Backend · ORM</div>
                 </div>
                 <div class="skill-card fade-up delay-4">
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
                     <div class="skill-name">Supabase / PostgreSQL</div>
-                    <div class="skill-years">2 años · Realtime · Auth · RLS</div>
+                    <div class="skill-years">Realtime · Auth · RLS</div>
                 </div>
                 <div class="skill-card fade-up delay-5">
                     <div class="skill-icon"><i class="fas fa-code"></i></div>
@@ -1306,15 +1323,23 @@
                 <div class="achievement-item fade-up delay-2">
                     <div class="ach-icon"><i class="fas fa-medal"></i></div>
                     <div class="ach-content">
-                        <h4>Puesto 33 · ICP 2022</h4>
-                        <p>Finales caribeñas del International Collegiate Programming Contest (ICPC), entre los mejores programadores de la región.</p>
+                        <h4>Puesto 33 · ICPC 2022</h4>
+                        <p>Finales caribeñas del International Collegiate Programming Contest, entre los mejores programadores de la región.</p>
                     </div>
                 </div>
                 <div class="achievement-item fade-up delay-3">
                     <div class="ach-icon"><i class="fas fa-newspaper"></i></div>
                     <div class="ach-content">
                         <h4>Publicación en revista rusa</h4>
-                        <p>Artículo sobre entrenamiento en realidad virtual publicado en una revista científica de Rusia (buscar URL).</p>
+                        <p>
+                            <a href="https://rdl-journal.ru/article/view/914" target="_blank">
+                                "Разработка тренажера виртуальной реальности для пренатальной диагностики врожденных пороков сердца"
+                            </a>
+                            <br />
+                            <span style="font-size:0.75rem; color:var(--text-muted);">
+                                Russian Digital Libraries Journal · Vol. 28, No. 2, 2025 · DOI: 10.26907/1562-5419-2025-28-2-316-327
+                            </span>
+                        </p>
                     </div>
                 </div>
                 <div class="achievement-item fade-up delay-4">
@@ -1336,7 +1361,7 @@
                 <a href="https://github.com/leifdev0306" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/leifdev" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://apklis.cu/u/leifdev" target="_blank" aria-label="Apklis"><i class="fas fa-store"></i></a>
-                <a href="mailto:leifdev@proton.me" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:leifdev0306@gmail.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
@@ -1355,7 +1380,6 @@
                 links.classList.toggle('open');
             });
 
-            // Cerrar al hacer clic en un enlace
             document.querySelectorAll('.nav-links a').forEach(function(link) {
                 link.addEventListener('click', function() {
                     toggle.classList.remove('open');
@@ -1376,7 +1400,6 @@
                 }
                 lastScroll = current;
 
-                // Active link highlight
                 const sections = document.querySelectorAll('section[id]');
                 let currentSection = '';
                 sections.forEach(function(section) {
@@ -1393,7 +1416,7 @@
                 });
             });
 
-            // ─── Scroll Reveal (Intersection Observer) ───
+            // ─── Scroll Reveal ───
             const fadeEls = document.querySelectorAll('.fade-up');
 
             const observer = new IntersectionObserver(function(entries) {
@@ -1411,7 +1434,6 @@
                 observer.observe(el);
             });
 
-            // Forzar visibilidad en elementos ya visibles
             setTimeout(function() {
                 fadeEls.forEach(function(el) {
                     const rect = el.getBoundingClientRect();
